@@ -14,8 +14,8 @@ const resources = {
             hero: {
                 title: '스타트업의 성공을',
                 titleHighlight: '함께 만듭니다',
-                subtitle: "테트라는 투자, 법률, 인사·노무, PR 분야의\n실무 전문가 4인이 결성한\n파트너십 기반의 컨설팅 그룹입니다.",
-                description: "창업자의 시선에서 문제를 바라보고,\n성장을 위한 실질적이고 총체적인 솔루션을\nOne-team으로서 함께 제안합니다.",
+                subtitle: "테트라는 투자, 법률, 인사·노무, PR 분야의\n실무 전문가 4인이 결성한\n파트너십 기반의 컴퍼니 빌더 & 스타트업 스튜디오입니다.",
+                description: "단순한 자문을 넘어, 투자부터 실제 운영까지.\n창업팀의 One-team이 되어\n위대한 기업을 함께 만들어 갑니다.",
                 note: '* 그리스어로 숫자 \'4\'를 뜻하는 \'Tetra\'로 Founding Partner 4명을 사명에 표현하였습니다.',
                 cta: '문의하기'
             },
@@ -111,23 +111,25 @@ const resources = {
                 cta: '문의하기'
             },
             process: {
-                title: '협업 프로세스',
-                subtitle: '테트라는 4단계의 체계적인 과정을 통해 여러분의 문제를 해결합니다',
-                step1: {
-                    title: 'Discover',
-                    desc: '스타트업의 현재 상황과 잠재된 리스크를 면밀히 진단합니다.'
-                },
-                step2: {
-                    title: 'Design',
-                    desc: '전문가 4인의 다각도 시선으로 실질적인 전략을 수립합니다.'
-                },
-                step3: {
-                    title: 'Draft & Drive',
-                    desc: '외부인이 아닌 In-house 파트너로서 함께 문제를 돌파합니다.'
-                },
-                step4: {
-                    title: 'Deliver Success',
-                    desc: '지속 가능한 성장과 여러분이 정의한 진짜 성공을 달성합니다.'
+                title: 'How We Work',
+                subtitle: 'From Zero to Great',
+                steps: {
+                    1: {
+                        title: 'Partnership',
+                        desc: '단순 자문을 넘어 공동 창업자 수준의 파트너십을 맺습니다.'
+                    },
+                    2: {
+                        title: 'Co-building',
+                        desc: '각 분야 전문가가 직접 실무에 참여하여 문제를 해결합니다.'
+                    },
+                    3: {
+                        title: 'Investment',
+                        desc: '성장에 필요한 자금을 직접 투자하거나 후속 투자를 유치합니다.'
+                    },
+                    4: {
+                        title: 'Scale-up',
+                        desc: '유니콘 기업으로 도약할 때까지 끝까지 함께합니다.'
+                    }
                 }
             },
             footer: {
@@ -148,8 +150,8 @@ const resources = {
             hero: {
                 title: 'Building Success',
                 titleHighlight: 'Together',
-                subtitle: 'A partnership-driven consulting group of four industry veterans in investment, legal, HR/labor, and PR.',
-                description: 'We stand by founders as an integrated "One-team," offering holistic and practical solutions to fuel sustainable startup growth.',
+                subtitle: 'A Company Builder & Startup Studio founded by four hands-on experts in Investment, Legal, HR, and PR.',
+                description: 'Beyond advice, we execute.\nWe become your "One-team" to co-build great companies from investment to operations.',
                 note: '* "Tetra" means the number \'4\' in Greek, representing our 4 Founding Partners.',
                 cta: 'Contact Us'
             },
@@ -172,22 +174,25 @@ const resources = {
                 }
             },
             services: {
-                title: 'Our Solutions',
-                consulting: {
-                    title: 'Consulting',
-                    intro: 'Tetra shares the concerns of startups.',
-                    approach: 'We focus on solving problems together as your In-House & One Team, not as agents or outsiders.',
-                    philosophy: 'We believe that sufficient time and energy investment is a necessary and sufficient condition for achieving goals.',
-                    method: 'To dedicate sufficient time and effort to you, Tetra avoids time-constrained Time Charge.',
-                    value: 'Beyond financial compensation, Tetra finds fulfillment in joining the journey to change the world and growing together.',
-                    solution: 'Instead of hiring new personnel, the Tetra team of experts in each field will help you together.'
-                },
-                investment: {
-                    title: 'Investment',
-                    philosophy: 'Not everyone needs to aim for unicorn status. No need to obsess over trends. Blind global expansion is not mandatory.',
-                    data: 'About 85% of Korean listed companies have a market cap below 500 billion won, and only about 3% of KOSDAQ companies are so-called \'unicorns\' with a market cap over 1 trillion won.',
-                    approach: 'Tetra supports your own goal achievement, not blind growth.',
-                    commitment: 'Tetra will be with you from the very beginning of your long journey.'
+                title: 'Our Model',
+                subtitle: 'Investing & Co-building',
+                items: {
+                    investment: {
+                        title: 'Investment',
+                        desc: 'We invest in early-stage startups with great potential and support their growth.'
+                    },
+                    legal: {
+                        title: 'Legal & IPO',
+                        desc: 'We build legal infrastructure for risk-free growth, from incorporation to IPO.'
+                    },
+                    hr: {
+                        title: 'HR & Culture',
+                        desc: 'We co-build HR systems optimized for growth, including recruiting, compensation, and culture.'
+                    },
+                    pr: {
+                        title: 'Strategic PR',
+                        desc: 'We execute communication strategies to share your value with the world.'
+                    }
                 }
             },
             team: {
@@ -245,23 +250,25 @@ const resources = {
                 cta: 'Contact Us'
             },
             process: {
-                title: 'Our Process',
-                subtitle: 'Tetra solves your problems through a systematic 4-step process',
-                step1: {
-                    title: 'Discover',
-                    desc: 'We closely diagnose the current status and potential risks of the startup.'
-                },
-                step2: {
-                    title: 'Design',
-                    desc: 'We establish practical strategies through the multi-angled perspectives of 4 experts.'
-                },
-                step3: {
-                    title: 'Draft & Drive',
-                    desc: 'As an In-house partner, not an outsider, we break through problems together.'
-                },
-                step4: {
-                    title: 'Deliver Success',
-                    desc: 'We achieve sustainable growth and the true success defined by you.'
+                title: 'How We Work',
+                subtitle: 'From Zero to Great',
+                steps: {
+                    1: {
+                        title: 'Partnership',
+                        desc: 'We form a co-founder level partnership beyond simple advisory.'
+                    },
+                    2: {
+                        title: 'Co-building',
+                        desc: 'Experts in each field participate directly to solve problems.'
+                    },
+                    3: {
+                        title: 'Investment',
+                        desc: 'We invest directly or help secure follow-on funding for growth.'
+                    },
+                    4: {
+                        title: 'Scale-up',
+                        desc: 'We stay with you until you become a unicorn.'
+                    }
                 }
             },
             footer: {

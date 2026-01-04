@@ -24,7 +24,7 @@
 
 .team-card {
     background: var(--color-white);
-    padding: var(--space-12) var(--space-8);
+    padding: var(--space-8) var(--space-6);
     border-radius: var(--space-1);
     text-align: center;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -32,9 +32,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* Top align for row consistency */
     align-items: center;
-    min-height: 520px;
+    min-height: 460px;
+    /* Reduced from 520px */
     position: relative;
 }
 
@@ -53,12 +53,13 @@
 
 .team-header-info {
     width: 100%;
-    min-height: 140px;
-    /* Consistent height for name/role/expertise */
+    min-height: 120px;
+    /* Reduced from 140px */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-4);
+    /* Reduced from space-6 */
 }
 
 .team-name {
@@ -84,7 +85,8 @@
     font-weight: 600;
     margin-top: auto;
     /* Push to bottom of header-info area */
-    padding-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    /* Reduced padding */
     border-bottom: 1px solid var(--color-bg-secondary);
     width: 100%;
     max-width: 200px;
@@ -99,12 +101,14 @@
     font-size: var(--text-sm);
     color: var(--color-text-secondary);
     line-height: 1.6;
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-4);
+    /* Reduced margin */
     word-break: keep-all;
     max-width: 240px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 60px;
+    min-height: 50px;
+    /* Reduced min-height */
     /* Align top of careers list */
 }
 
@@ -130,6 +134,26 @@
 .team-careers li::before {
     content: '';
     display: none;
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        min-height: auto;
+        /* Remove fixed height on mobile */
+        padding: var(--space-8) var(--space-6);
+    }
+
+    .team-header-info {
+        min-height: auto;
+        /* Remove fixed height on mobile */
+        margin-bottom: var(--space-6);
+    }
+
+    .team-bio {
+        min-height: auto;
+        /* Remove fixed height on mobile */
+        margin-bottom: var(--space-6);
+    }
 }
 
 .linkedin-link {
