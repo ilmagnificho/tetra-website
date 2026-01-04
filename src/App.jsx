@@ -16,6 +16,8 @@ import './index.css';
 // REPLACE 'G-XXXXXXXXXX' with your actual Measurement ID
 ReactGA.initialize('G-1DT5XQJ7J6');
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
     const { i18n } = useTranslation();
 
@@ -28,6 +30,7 @@ function App() {
     return (
         <div className="App">
             <SEO />
+            <ScrollToTop />
             <Navbar />
             <Hero />
             <Philosophy />

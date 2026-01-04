@@ -38,22 +38,25 @@ const resources = {
                 }
             },
             services: {
-                title: '테트라의 문제 해결 방법',
-                consulting: {
-                    title: 'Consulting',
-                    intro: '테트라는 스타트업의 고민을 함께합니다.',
-                    approach: '대리인/외부인의 입장에서가 아닌, 여러분의 In-House & One Team으로 함께 문제 해결에 집중합니다.',
-                    philosophy: '모든 일에 있어 목표 달성을 위해서는 충분한 시간과 에너지 투입이 필요충분조건이라고 생각합니다.',
-                    method: '테트라는 여러분에게 충분한 시간과 노력을 쏟기 위해, 시간에 구속받는 Time Charge는 지양합니다.',
-                    value: '금전적 보상 이상으로 세상을 바꾸는 여정을 함께하고 같이 성장하는 것에 테트라는 보람을 느낍니다.',
-                    solution: '신규 인력 채용 대신, 각 분야의 전문가로 이루어진 테트라 팀이 다함께 여러분을 돕겠습니다.'
-                },
-                investment: {
-                    title: 'Investment',
-                    philosophy: '모두가 유니콘을 목표할 필요는 없습니다. 트렌드에 연연할 필요도 없습니다. 맹목적인 글로벌 시장 진출도 필수가 아닙니다.',
-                    data: '대한민국 상장기업 중 약 85%가 시가총액 5천억원 미만이고, KOSDAQ 기업의 불과 3% 정도만이 시가총액 1조원 이상의 소위 \'유니콘\' 입니다.',
-                    approach: '테트라는 맹목적인 성장이 아닌, 여러분 스스로의 목표 성취를 응원합니다.',
-                    commitment: '여러분들의 긴 여정의 첫 시작부터 테트라가 함께 하겠습니다.'
+                title: 'Our Model',
+                subtitle: 'Investing & Co-building',
+                items: {
+                    investment: {
+                        title: 'Investment',
+                        desc: '잠재력 있는 초기 스타트업을 발굴하여 투자를 집행하고 성장을 지원합니다.'
+                    },
+                    legal: {
+                        title: 'Legal & IPO',
+                        desc: '기업 설립, 계약 검토, IPO 준비까지, 리스크 없는 성장을 위한 법률 인프라를 구축합니다.'
+                    },
+                    hr: {
+                        title: 'HR & Culture',
+                        desc: '채용, 보상 설계, 조직 문화 등 성장에 최적화된 HR 시스템을 함께 만듭니다.'
+                    },
+                    pr: {
+                        title: 'Strategic PR',
+                        desc: '브랜딩부터 언론 홍보까지, 기업의 가치를 세상에 알리는 커뮤니케이션 전략을 실행합니다.'
+                    }
                 }
             },
             team: {
@@ -99,7 +102,7 @@ const resources = {
                         careers: [
                             '(현) (주)더프루브 Founder, CEO',
                             'Altos Ventures (PR Advisor)',
-                            '크래프톤 블루홀 (홍보팀장)',
+                            '블루홀 (현 크래프톤) 홍보팀',
                             '본엔젤스벤처파트너스 (Chief Supporter)'
                         ]
                     }

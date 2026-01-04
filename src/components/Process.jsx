@@ -7,10 +7,10 @@ const Process = () => {
     const { t } = useTranslation();
 
     const steps = [
-        { icon: <Search size={32} />, id: 'step1' },
-        { icon: <PenTool size={32} />, id: 'step2' },
-        { icon: <Rocket size={32} />, id: 'step3' },
-        { icon: <Award size={32} />, id: 'step4' }
+        { icon: <Search size={32} />, id: '1' },
+        { icon: <PenTool size={32} />, id: '2' },
+        { icon: <Rocket size={32} />, id: '3' },
+        { icon: <Award size={32} />, id: '4' }
     ];
 
     return (
@@ -45,8 +45,8 @@ const Process = () => {
                                 {index < steps.length - 1 && <div className="process-connector" />}
                             </div>
                             <div className="process-content">
-                                <h3 className="process-step-title">{t(`process.${step.id}.title`)}</h3>
-                                <p className="process-step-desc">{t(`process.${step.id}.desc`)}</p>
+                                <h3 className="process-step-title">{t(`process.steps.${step.id}.title`)}</h3>
+                                <p className="process-step-desc">{t(`process.steps.${step.id}.desc`)}</p>
                             </div>
                         </motion.div>
                     ))}
