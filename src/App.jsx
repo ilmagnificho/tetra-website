@@ -14,7 +14,7 @@ import './index.css';
 
 // Initialize Google Analytics with a placeholder ID
 // REPLACE 'G-XXXXXXXXXX' with your actual Measurement ID
-ReactGA.initialize('G-XXXXXXXXXX');
+ReactGA.initialize('G-1DT5XQJ7J6');
 
 function App() {
     const { i18n } = useTranslation();
