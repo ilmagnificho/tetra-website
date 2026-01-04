@@ -2,6 +2,13 @@
     padding-bottom: var(--space-32);
 }
 
+.process .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
 .process-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

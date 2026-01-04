@@ -14,7 +14,7 @@ const resources = {
             hero: {
                 title: '스타트업의 성공을',
                 titleHighlight: '함께 만듭니다',
-                subtitle: "테트라는 투자, 법률, 인사·노무, PR 분야의\n실무 전문가 4인이 결성한\n파트너십 기반의 컴퍼니 빌더 & 스타트업 스튜디오입니다.",
+                subtitle: "테트라는 투자, 법률, 인사·노무, PR 분야의\n실무 전문가 4인이 결성한\n스타트업 스튜디오이자 전문 컨설팅 펌입니다.",
                 description: "단순한 자문을 넘어, 투자부터 실제 운영까지.\n창업팀의 One-team이 되어\n위대한 기업을 함께 만들어 갑니다.",
                 note: '* 그리스어로 숫자 \'4\'를 뜻하는 \'Tetra\'로 Founding Partner 4명을 사명에 표현하였습니다.',
                 cta: '문의하기'
@@ -46,8 +46,8 @@ const resources = {
                         desc: '잠재력 있는 초기 스타트업을 발굴하여 투자를 집행하고 성장을 지원합니다.'
                     },
                     legal: {
-                        title: 'Legal & IPO',
-                        desc: '기업 설립, 계약 검토, IPO 준비까지, 리스크 없는 성장을 위한 법률 인프라를 구축합니다.'
+                        title: 'Business Ops',
+                        desc: '초기 기업이 흔히 겪는 시행착오를 줄이고, 안정적인 기업 운영을 위한 최적의 구조를 제안합니다.'
                     },
                     hr: {
                         title: 'HR & Culture',
@@ -78,7 +78,7 @@ const resources = {
                         name: '박소영',
                         role: 'Partner (변호사)',
                         expertise: '투자 · 인사노무',
-                        bio: 'KOSDAQ 상장사 법무팀장을 역임한 법률 및 IPO 자문 전문가입니다.',
+                        bio: 'KOSDAQ 상장사 법무팀장을 역임한 기업 법무 전문가입니다.',
                         careers: [
                             '카카오게임즈 (법무팀장)',
                             '한글과컴퓨터 (법무팀)'
@@ -119,7 +119,7 @@ const resources = {
                 steps: {
                     1: {
                         title: 'Partnership',
-                        desc: '단순 자문을 넘어 공동 창업자 수준의 파트너십을 맺습니다.'
+                        desc: '신뢰를 바탕으로 진정성 있는 파트너십을 맺습니다.'
                     },
                     2: {
                         title: 'Co-building',
@@ -131,7 +131,7 @@ const resources = {
                     },
                     4: {
                         title: 'Scale-up',
-                        desc: '유니콘 기업으로 도약할 때까지 끝까지 함께합니다.'
+                        desc: '지속 가능한 성장과 목표 달성을 위해 끝까지 함께합니다.'
                     }
                 }
             },
@@ -153,7 +153,7 @@ const resources = {
             hero: {
                 title: 'Building Success',
                 titleHighlight: 'Together',
-                subtitle: 'A Company Builder & Startup Studio founded by four hands-on experts in Investment, Legal, HR, and PR.',
+                subtitle: 'A Startup Studio & Consulting Firm founded by four hands-on experts in Investment, Legal, HR, and PR.',
                 description: 'Beyond advice, we execute.\nWe become your "One-team" to co-build great companies from investment to operations.',
                 note: '* "Tetra" means the number \'4\' in Greek, representing our 4 Founding Partners.',
                 cta: 'Contact Us'
@@ -185,8 +185,8 @@ const resources = {
                         desc: 'We invest in early-stage startups with great potential and support their growth.'
                     },
                     legal: {
-                        title: 'Legal & IPO',
-                        desc: 'We build legal infrastructure for risk-free growth, from incorporation to IPO.'
+                        title: 'Business Ops',
+                        desc: 'We help establish optimal corporate structures and minimize operational trial and error.'
                     },
                     hr: {
                         title: 'HR & Culture',
@@ -217,7 +217,7 @@ const resources = {
                         name: 'Soyoung Park',
                         role: 'Partner (Attorney)',
                         expertise: 'Investment · HR',
-                        bio: 'Legal and IPO advisory expert who served as Legal Team Leader for a KOSDAQ-listed company.',
+                        bio: 'Corporate law expert who served as Legal Team Leader for a KOSDAQ-listed company.',
                         careers: [
                             'Kakao Games (Legal Team Leader)',
                             'Hancom (Legal Team)'
@@ -258,7 +258,7 @@ const resources = {
                 steps: {
                     1: {
                         title: 'Partnership',
-                        desc: 'We form a co-founder level partnership beyond simple advisory.'
+                        desc: 'We build a genuine partnership based on deep trust.'
                     },
                     2: {
                         title: 'Co-building',
@@ -270,7 +270,7 @@ const resources = {
                     },
                     4: {
                         title: 'Scale-up',
-                        desc: 'We stay with you until you become a unicorn.'
+                        desc: 'We stay with you until you achieve sustainable growth and goals.'
                     }
                 }
             },
