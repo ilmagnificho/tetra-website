@@ -1,0 +1,111 @@
+.process {
+    padding-bottom: var(--space-32);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-12);
+    margin-top: var(--space-16);
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .process-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-6);
+    }
+}
+
+.process-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.process-icon-container {
+    position: relative;
+    margin-bottom: var(--space-8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.process-icon-box {
+    width: 80px;
+    height: 80px;
+    background: var(--color-white);
+    border: 2px solid var(--color-brand-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-brand-primary);
+    transition: all 0.3s ease;
+    z-index: 5;
+    box-shadow: var(--shadow-md);
+}
+
+.process-item:hover .process-icon-box {
+    background: var(--color-brand-primary);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-xl);
+}
+
+.process-number {
+    position: absolute;
+    top: -10px;
+    left: calc(50% + 30px);
+    width: 28px;
+    height: 28px;
+    background: var(--color-brand-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-xs);
+    font-weight: 800;
+    z-index: 10;
+}
+
+.process-connector {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 40px);
+    width: calc(100% - 80px);
+    height: 2px;
+    background: repeating-linear-gradient(90deg,
+            var(--color-border),
+            var(--color-border) 10px,
+            transparent 10px,
+            transparent 20px);
+    z-index: 1;
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .process-connector {
+        display: block;
+    }
+}
+
+.process-step-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+    color: var(--color-text-primary);
+    line-height: 1.4;
+}
+
+.process-step-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: 240px;
+    margin: 0 auto;
+    word-break: keep-all;
+}

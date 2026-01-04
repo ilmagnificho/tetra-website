@@ -33,8 +33,8 @@ const resources = {
                 unicorn: {
                     number: '02',
                     title: 'Unicorn, 창업자의 목표?',
-                    intro: '최근까지 우리는 전설의 \'유니콘\'이 마치 현실에 존재하는 동물인 것처럼 지내 왔습니다.',
-                    question: '왜 유니콘이 목표여야만 훌륭한 걸까요? 왜 유니콘이 되어야 하는 게 당연스러울까요? 과연 유니콘은 모두에게 올바른 목표일까요?'
+                    intro: '최근까지 시장은 전설의 \'유니콘\'이 마치 유일한 정답인 것처럼 이야기해 왔습니다. 하지만 무리한 밸류에이션 추구는 때로 사업의 본질을 흐리기도 합니다.',
+                    question: '테트라는 모두가 유니콘이 될 필요는 없다고 믿습니다. 각 스타트업마다 어울리는 성장 속도와 목표는 다릅니다. 우리는 맹목적인 숫자가 아닌, 여러분이 정의한 \'진짜 성공\'을 향한 지속 가능한 경로를 함께 찾아가겠습니다.'
                 }
             },
             services: {
@@ -63,22 +63,45 @@ const resources = {
                     cho: {
                         name: '조융재',
                         role: 'Partner',
-                        expertise: '투자사업'
+                        expertise: '투자 · 사업',
+                        bio: 'PE, VC 투자와 창업, 스타트업 운영을 두루 경험한 스타트업 전문가입니다.',
+                        careers: [
+                            '크래프톤 (CEO Staff)',
+                            '띵스플로우 (COO)',
+                            '본엔젤스벤처파트너스 (심사역)'
+                        ]
                     },
                     park: {
                         name: '박소영',
                         role: 'Partner (변호사)',
-                        expertise: '투자 · 인사노무'
+                        expertise: '투자 · 인사노무',
+                        bio: 'KOSDAQ 상장사 법무팀장을 역임한 법률 및 IPO 자문 전문가입니다.',
+                        careers: [
+                            '카카오게임즈 (법무팀장)',
+                            '한글과컴퓨터 (법무팀)'
+                        ]
                     },
                     yang: {
                         name: '양윤지',
                         role: 'Partner',
-                        expertise: '투자 · 인사노무'
+                        expertise: '투자 · 인사노무',
+                        bio: '국내외 글로벌 기업의 법무와 운영을 총괄해온 인사·노무 컨설팅 전문가입니다.',
+                        careers: [
+                            'BlueStacks (USA, Corp. Dev Director)',
+                            '크래프톤 펍지 (GCS실 실장)'
+                        ]
                     },
                     kim: {
                         name: '김경범',
                         role: 'Partner',
-                        expertise: '투자 · 홍보PR'
+                        expertise: '투자 · 홍보PR',
+                        bio: '100여 개 이상의 스타트업 홍보를 전담해온 전략적 PR 전문가입니다.',
+                        careers: [
+                            '(현) (주)더프루브 Founder, CEO',
+                            'Altos Ventures (PR Advisor)',
+                            '크래프톤 블루홀 (홍보팀장)',
+                            '본엔젤스벤처파트너스 (Chief Supporter)'
+                        ]
                     }
                 }
             },
@@ -86,6 +109,26 @@ const resources = {
                 title: '함께 성장할 준비가 되셨나요?',
                 subtitle: '테트라와 함께 스타트업의 성공을 만들어가세요',
                 cta: '문의하기'
+            },
+            process: {
+                title: '협업 프로세스',
+                subtitle: '테트라는 4단계의 체계적인 과정을 통해 여러분의 문제를 해결합니다',
+                step1: {
+                    title: 'Discover',
+                    desc: '스타트업의 현재 상황과 잠재된 리스크를 면밀히 진단합니다.'
+                },
+                step2: {
+                    title: 'Design',
+                    desc: '전문가 4인의 다각도 시선으로 실질적인 전략을 수립합니다.'
+                },
+                step3: {
+                    title: 'Draft & Drive',
+                    desc: '외부인이 아닌 In-house 파트너로서 함께 문제를 돌파합니다.'
+                },
+                step4: {
+                    title: 'Deliver Success',
+                    desc: '지속 가능한 성장과 여러분이 정의한 진짜 성공을 달성합니다.'
+                }
             },
             footer: {
                 copyright: '© 2024 Tetra Corporation. All rights reserved.',
@@ -124,8 +167,8 @@ const resources = {
                 unicorn: {
                     number: '02',
                     title: 'Unicorn, The Founder\'s Goal?',
-                    intro: 'Until recently, we have been living as if the legendary \'unicorn\' were a real animal.',
-                    question: 'Why must being a unicorn be the goal to be excellent? Why should becoming a unicorn be natural? Is unicorn status the right goal for everyone?'
+                    intro: 'Until recently, the market spoke as if the legendary \'Unicorn\' was the only right answer. However, chasing excessive valuations can sometimes blur the essence of the business.',
+                    question: 'Tetra believes that not everyone needs to become a unicorn. Every startup has a different growth pace and destination. Instead of blind numbers, we find the most sustainable path toward the \'true success\' defined by you.'
                 }
             },
             services: {
@@ -154,22 +197,45 @@ const resources = {
                     cho: {
                         name: 'Yoongjae Cho',
                         role: 'Partner',
-                        expertise: 'Investment'
+                        expertise: 'Investment · Business',
+                        bio: 'Startup expert with extensive experience in PE/VC investment, entrepreneurship, and startup operations.',
+                        careers: [
+                            'Krafton (CEO Staff)',
+                            'Thingsflow (COO)',
+                            'BonAngels Venture Partners (Associate)'
+                        ]
                     },
                     park: {
                         name: 'Soyoung Park',
                         role: 'Partner (Attorney)',
-                        expertise: 'Investment · HR'
+                        expertise: 'Investment · HR',
+                        bio: 'Legal and IPO advisory expert who served as Legal Team Leader for a KOSDAQ-listed company.',
+                        careers: [
+                            'Kakao Games (Legal Team Leader)',
+                            'Hancom (Legal Team)'
+                        ]
                     },
                     yang: {
                         name: 'Yoonji Yang',
                         role: 'Partner',
-                        expertise: 'Investment · HR'
+                        expertise: 'Investment · HR',
+                        bio: 'HR and labor consulting expert who has overseen legal and operations for global companies.',
+                        careers: [
+                            'BlueStacks (USA, Corp. Dev Director)',
+                            'Krafton PUBG (GCS Dept. Director)'
+                        ]
                     },
                     kim: {
                         name: 'Kyungbum Kim',
                         role: 'Partner',
-                        expertise: 'Investment · PR'
+                        expertise: 'Investment · PR',
+                        bio: 'Strategic PR expert dedicated to the promotion of over 100 startups.',
+                        careers: [
+                            '(Current) The Prove Founder, CEO',
+                            'Altos Ventures (PR Advisor)',
+                            'Krafton Bluehole (PR Team Leader)',
+                            'BonAngels Venture Partners (Chief Supporter)'
+                        ]
                     }
                 }
             },
@@ -177,6 +243,26 @@ const resources = {
                 title: 'Ready to Grow Together?',
                 subtitle: 'Create startup success with Tetra',
                 cta: 'Contact Us'
+            },
+            process: {
+                title: 'Our Process',
+                subtitle: 'Tetra solves your problems through a systematic 4-step process',
+                step1: {
+                    title: 'Discover',
+                    desc: 'We closely diagnose the current status and potential risks of the startup.'
+                },
+                step2: {
+                    title: 'Design',
+                    desc: 'We establish practical strategies through the multi-angled perspectives of 4 experts.'
+                },
+                step3: {
+                    title: 'Draft & Drive',
+                    desc: 'As an In-house partner, not an outsider, we break through problems together.'
+                },
+                step4: {
+                    title: 'Deliver Success',
+                    desc: 'We achieve sustainable growth and the true success defined by you.'
+                }
             },
             footer: {
                 copyright: '© 2024 Tetra Corporation. All rights reserved.',

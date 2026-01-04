@@ -1,56 +1,65 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { TriangleAlert, Sparkles } from 'lucide-react';
 import './Philosophy.css';
 
 const Philosophy = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="philosophy" className="section philosophy bg-light">
+        <section id="philosophy" className="section philosophy">
+            <div className="philosophy-bg-text">OUR VISION</div>
             <div className="container">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="section-header"
-                >
-                    <h2 className="section-title">{t('philosophy.title')}</h2>
-                    <p className="section-subtitle">{t('philosophy.subtitle')}</p>
-                </motion.div>
-
-                <div className="philosophy-content">
+                <div className="philosophy-layout">
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.1, duration: 0.6 }}
-                        className="philosophy-card"
+                        transition={{ duration: 0.8 }}
+                        className="philosophy-header"
                     >
-                        <h3 className="card-number">{t('philosophy.risk.number')}</h3>
-                        <h4 className="card-title">{t('philosophy.risk.title')}</h4>
-                        <div className="card-content">
-                            <p className="card-paragraph">{t('philosophy.risk.intro')}</p>
-                            <p className="card-paragraph">{t('philosophy.risk.challenge')}</p>
-                            <p className="card-paragraph">{t('philosophy.risk.reality')}</p>
-                            <blockquote className="card-quote">{t('philosophy.risk.question')}</blockquote>
-                        </div>
+                        <span className="section-tag">{t('philosophy.title')}</span>
+                        <h2 className="section-title">{t('philosophy.subtitle')}</h2>
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2, duration: 0.6 }}
-                        className="philosophy-card"
-                    >
-                        <h3 className="card-number">{t('philosophy.unicorn.number')}</h3>
-                        <h4 className="card-title">{t('philosophy.unicorn.title')}</h4>
-                        <div className="card-content">
-                            <p className="card-paragraph">{t('philosophy.unicorn.intro')}</p>
-                            <blockquote className="card-quote">{t('philosophy.unicorn.question')}</blockquote>
-                        </div>
-                    </motion.div>
+                    <div className="philosophy-items">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2, duration: 0.6 }}
+                            className="philosophy-item item-risk"
+                        >
+                            <div className="item-header">
+                                <span className="item-number">01</span>
+                                <TriangleAlert className="item-icon" size={24} />
+                            </div>
+                            <h3 className="item-title">{t('philosophy.risk.title')}</h3>
+                            <p className="item-desc">{t('philosophy.risk.intro')}</p>
+                            <p className="item-desc">{t('philosophy.risk.challenge')}</p>
+                            <blockquote className="item-quote">
+                                {t('philosophy.risk.question')}
+                            </blockquote>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4, duration: 0.6 }}
+                            className="philosophy-item item-unicorn"
+                        >
+                            <div className="item-header">
+                                <span className="item-number">02</span>
+                                <Sparkles className="item-icon" size={24} />
+                            </div>
+                            <h3 className="item-title">{t('philosophy.unicorn.title')}</h3>
+                            <p className="item-desc">{t('philosophy.unicorn.intro')}</p>
+                            <blockquote className="item-quote">
+                                {t('philosophy.unicorn.question')}
+                            </blockquote>
+                        </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

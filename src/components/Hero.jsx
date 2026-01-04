@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -14,6 +15,7 @@ const Hero = () => {
 
     return (
         <section className="hero">
+            <div className="hero-bg-accent"></div>
             <div className="container">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -34,6 +36,16 @@ const Hero = () => {
                             {t('hero.cta')}
                         </button>
                     </div>
+                </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1, duration: 1 }}
+                    className="scroll-indicator"
+                >
+                    <div className="scroll-text">Scroll Down</div>
+                    <ChevronDown className="scroll-icon" size={24} />
                 </motion.div>
             </div>
         </section>

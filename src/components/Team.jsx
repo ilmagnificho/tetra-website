@@ -31,12 +31,24 @@ const Team = () => {
                             transition={{ delay: index * 0.05, duration: 0.6 }}
                             className="team-card"
                         >
-                            <h3 className="team-name">{t(`team.members.${member}.name`)}</h3>
-                            <p className="team-role">{t(`team.members.${member}.role`)}</p>
-                            <p className="team-expertise">{t(`team.members.${member}.expertise`)}</p>
+                            <div className="team-info">
+                                <div className="team-header-info">
+                                    <h3 className="team-name">{t(`team.members.${member}.name`)}</h3>
+                                    <p className="team-role">{t(`team.members.${member}.role`)}</p>
+                                    <p className="team-expertise">{t(`team.members.${member}.expertise`)}</p>
+                                </div>
+                                <div className="team-details">
+                                    <p className="team-bio">{t(`team.members.${member}.bio`)}</p>
+                                    <ul className="team-careers">
+                                        {t(`team.members.${member}.careers`, { returnObjects: true }).map((career, i) => (
+                                            <li key={i}>{career}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
                             {member === 'cho' && (
                                 <a href="https://www.linkedin.com/in/yjcho/" target="_blank" rel="noopener noreferrer" className="linkedin-link">
-                                    <img src="/images/linkedin_new.png" alt="LinkedIn" className="linkedin-icon" />
+                                    <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
                                 </a>
                             )}
                         </motion.div>

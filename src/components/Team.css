@@ -4,57 +4,149 @@
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-12);
 }
 
-.team-card {
-    padding: var(--spacing-lg) 0;
-    border-top: 1px solid var(--color-border);
-}
-
-.team-name {
-    font-size: var(--font-size-base);
-    font-weight: 600;
-    color: var(--color-text-primary);
-    margin-bottom: var(--spacing-xs);
-    line-height: var(--line-height-snug);
-}
-
-.team-role {
-    font-size: var(--font-size-sm);
-    color: var(--color-tetra-blue);
-    font-weight: 500;
-    margin-bottom: var(--spacing-xs);
-    line-height: var(--line-height-normal);
-}
-
-.team-expertise {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-    line-height: var(--line-height-normal);
-}
-
-/* LinkedIn icon styling */
-.linkedin-link {
-    display: inline-block;
-    margin-left: var(--spacing-sm);
-}
-
-.linkedin-icon {
-    width: 20px;
-    height: auto;
-    vertical-align: middle;
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 640px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 1024px) {
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns for 4 partners */
     }
+}
+
+.team-card {
+    background: var(--color-white);
+    padding: var(--space-12) var(--space-8);
+    border-radius: var(--space-1);
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Top align for row consistency */
+    align-items: center;
+    min-height: 520px;
+    position: relative;
+}
+
+.team-card:hover {
+    border-color: var(--color-brand-primary);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
+}
+
+.team-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-header-info {
+    width: 100%;
+    min-height: 140px;
+    /* Consistent height for name/role/expertise */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-6);
+}
+
+.team-name {
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-1);
+    letter-spacing: -0.01em;
+}
+
+.team-role {
+    font-size: var(--text-sm);
+    color: var(--color-brand-primary);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.team-expertise {
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+    font-weight: 600;
+    margin-top: auto;
+    /* Push to bottom of header-info area */
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-bg-secondary);
+    width: 100%;
+    max-width: 200px;
+}
+
+.team-details {
+    text-align: center;
+    width: 100%;
+}
+
+.team-bio {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-6);
+    word-break: keep-all;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 60px;
+    /* Align top of careers list */
+}
+
+.team-careers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-careers li {
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-2);
+    line-height: 1.4;
+    position: relative;
+    text-align: center;
+}
+
+/* Remove bullets for centered editorial look or keep them subtle */
+.team-careers li::before {
+    content: '';
+    display: none;
+}
+
+.linkedin-link {
+    position: absolute;
+    bottom: var(--space-6);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    transition: all 0.2s ease;
+}
+
+.linkedin-link:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
 }

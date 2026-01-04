@@ -1,201 +1,382 @@
 :root {
-  /* Tetra Brand Colors - Clean & Professional */
-  --color-tetra-blue: #1e4d7b;
-  --color-tetra-blue-dark: #153a5c;
-  --color-tetra-blue-light: #2a5f94;
+  /* Brand Colors - HSL for transparency support */
+  --tetra-hue: 210;
+  --tetra-sat: 61%;
+  --tetra-light: 30%;
+  /* #1e4d7b */
 
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #fafafa;
-  --color-bg-tertiary: #f5f5f5;
+  --color-brand-primary: hsl(var(--tetra-hue), var(--tetra-sat), var(--tetra-light));
+  --color-brand-dark: hsl(var(--tetra-hue), var(--tetra-sat), 20%);
+  --color-brand-light: hsl(var(--tetra-hue), var(--tetra-sat), 45%);
 
-  --color-text-primary: #0a0a0a;
-  --color-text-secondary: #4a4a4a;
-  --color-text-muted: #888888;
+  /* Neutral scale - Cool Grays */
+  --color-white: #ffffff;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
 
-  --color-border: #e5e5e5;
-  --color-border-light: #f0f0f0;
+  /* Semantic Colors */
+  --color-bg-primary: var(--color-white);
+  --color-bg-secondary: var(--color-gray-50);
+  --color-bg-tertiary: var(--color-gray-100);
 
-  /* Spacing - More refined */
-  --spacing-xs: 0.375rem;
-  --spacing-sm: 0.75rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  --spacing-4xl: 6rem;
-  --spacing-5xl: 8rem;
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary: var(--color-gray-400);
 
-  /* Typography - Better hierarchy */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-korean: 'Noto Sans KR', sans-serif;
+  --color-border: var(--color-gray-200);
 
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 2rem;
-  --font-size-4xl: 2.5rem;
-  --font-size-5xl: 3.5rem;
-  --font-size-6xl: 4.5rem;
-  --font-size-7xl: 6rem;
+  /* Spacing System - 4px base */
+  --space-1: 0.25rem;
+  /* 4px */
+  --space-2: 0.5rem;
+  /* 8px */
+  --space-3: 0.75rem;
+  /* 12px */
+  --space-4: 1rem;
+  /* 16px */
+  --space-5: 1.25rem;
+  /* 20px */
+  --space-6: 1.5rem;
+  /* 24px */
+  --space-8: 2rem;
+  /* 32px */
+  --space-10: 2.5rem;
+  /* 40px */
+  --space-12: 3rem;
+  /* 48px */
+  --space-16: 4rem;
+  /* 64px */
+  --space-20: 5rem;
+  /* 80px */
+  --space-24: 6rem;
+  /* 96px */
+  --space-32: 8rem;
+  /* 128px */
 
-  /* Line heights - More refined */
-  --line-height-tight: 1.15;
-  --line-height-snug: 1.35;
-  --line-height-normal: 1.5;
-  --line-height-relaxed: 1.7;
-  --line-height-loose: 1.85;
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-korean: 'Noto Sans KR', var(--font-sans);
 
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 350ms ease;
+  /* Type Scale (Major Third) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-padding: var(--space-6);
+  --header-height: 80px;
 }
 
-* {
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  font-family: var(--font-primary);
-  background-color: var(--color-bg-primary);
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
   color: var(--color-text-primary);
-  line-height: var(--line-height-normal);
-  overflow-x: hidden;
+  background-color: var(--color-bg-primary);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  word-break: keep-all;
+  /* Prevent Korean word breaking in middle */
+  overflow-wrap: break-word;
+  /* Allow breaking for very long English words */
 }
 
 body.korean {
   font-family: var(--font-korean);
 }
 
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-xl);
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 var(--spacing-lg);
-  }
-}
-
-/* Section Spacing */
-.section {
-  padding: var(--spacing-5xl) 0;
-}
-
-@media (max-width: 768px) {
-  .section {
-    padding: var(--spacing-3xl) 0;
-  }
-}
-
-/* Button Styles - Minimal */
-.btn {
-  padding: var(--spacing-md) var(--spacing-xl);
-  border-radius: 0;
-  font-weight: 500;
-  font-size: var(--font-size-base);
-  cursor: pointer;
-  transition: all var(--transition-base);
-  border: none;
-  outline: none;
-  text-decoration: none;
-  display: inline-block;
-  letter-spacing: 0.02em;
-}
-
-.btn-primary {
-  background: var(--color-tetra-blue);
-  color: white;
-  border: 2px solid var(--color-tetra-blue);
-}
-
-.btn-primary:hover {
-  background: var(--color-tetra-blue-dark);
-  border-color: var(--color-tetra-blue-dark);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--color-text-primary);
-  border: 2px solid var(--color-text-primary);
-}
-
-.btn-secondary:hover {
-  background: var(--color-text-primary);
-  color: white;
-}
-
-/* Typography */
+/* Typography Utilities */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  line-height: var(--line-height-tight);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--space-4);
+  color: var(--color-text-primary);
   letter-spacing: -0.02em;
+  /* Tighter letter spacing for headers */
 }
 
 p {
-  margin: 0;
+  margin-bottom: var(--space-4);
+  line-height: 1.7;
+  /* Relaxed line height for body text */
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 /* Utility Classes */
+.text-brand {
+  color: var(--color-brand-primary);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-base {
+  font-size: var(--text-base);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+.text-2xl {
+  font-size: var(--text-2xl);
+}
+
+.text-3xl {
+  font-size: var(--text-3xl);
+}
+
+.text-4xl {
+  font-size: var(--text-4xl);
+}
+
+.text-5xl {
+  font-size: var(--text-5xl);
+}
+
+.display-text {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
 .text-center {
   text-align: center;
 }
 
-.text-tetra {
-  color: var(--color-tetra-blue);
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.section {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
 }
 
 .bg-light {
   background-color: var(--color-bg-secondary);
 }
 
-/* Animations - Subtle */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+.bg-white {
+  background-color: var(--color-white);
+}
 
-  to {
-    opacity: 1;
+.bg-brand-light {
+  background-color: var(--color-brand-light);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Button Component */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  /* Pill shape for modern feel */
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  font-size: var(--text-base);
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-brand-primary);
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(30, 77, 123, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(30, 77, 123, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-brand-primary);
+  border: 1px solid var(--color-brand-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-brand-primary);
+  color: white;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-8);
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
+/* Flex Utilities */
+.flex {
+  display: flex;
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.gap-8 {
+  gap: var(--space-8);
 }

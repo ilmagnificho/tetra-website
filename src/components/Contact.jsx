@@ -26,10 +26,24 @@ const Contact = () => {
             <footer className="footer">
                 <div className="container">
                     <div className="footer-content">
-                        <div className="footer-logo">
-                            <img src="/images/tetra-logo.png" alt="Tetra" className="footer-logo-image" />
+                        <div className="footer-left">
+                            <div className="footer-logo">
+                                <img src="/images/tetra-logo.png" alt="Tetra" className="footer-logo-image" />
+                            </div>
+                            <p className="footer-address">
+                                Seoul, Republic of Korea<br />
+                                <a href="mailto:info@tetracorp.co.kr" className="footer-email">info@tetracorp.co.kr</a>
+                            </p>
                         </div>
-                        <div className="footer-info">
+
+                        <div className="footer-right">
+                            <div className="footer-links">
+                                <span className="footer-link-group">
+                                    <a href="#philosophy" className="footer-link">{t('nav.philosophy')}</a>
+                                    <a href="#services" className="footer-link">{t('nav.services')}</a>
+                                    <a href="#team" className="footer-link">{t('nav.team')}</a>
+                                </span>
+                            </div>
                             <p className="footer-copyright">{t('footer.copyright')}</p>
                         </div>
                     </div>

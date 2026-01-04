@@ -5,6 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
     const { t, i18n } = useTranslation();
     const [scrolled, setScrolled] = useState(false);
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-right">
-                        <div className="navbar-links">
+                        <div className="navbar-links desktop-links">
                             <button onClick={() => scrollToSection('philosophy')} className="nav-link">
                                 {t('nav.philosophy')}
                             </button>
@@ -51,10 +52,40 @@ const Navbar = () => {
                                 {t('nav.contact')}
                             </button>
                         </div>
-                        <button onClick={toggleLanguage} className="lang-toggle">
-                            {i18n.language === 'ko' ? 'EN' : 'KO'}
-                        </button>
+
+                        <div className="navbar-actions">
+                            <button onClick={toggleLanguage} className="lang-toggle">
+                                {i18n.language === 'ko' ? 'EN' : 'KO'}
+                            </button>
+
+                            {/* Mobile Menu Toggle */}
+                            <button
+                                className="mobile-toggle"
+                                onClick={() => setIsMobileOpen(!isMobileOpen)}
+                                aria-label="Toggle menu"
+                            >
+                                <span className={`hamburger ${isMobileOpen ? 'active' : ''}`}></span>
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Mobile Menu Overlay */}
+            <div className={`mobile-menu ${isMobileOpen ? 'open' : ''}`}>
+                <div className="mobile-links">
+                    <button onClick={() => { scrollToSection('philosophy'); setIsMobileOpen(false); }} className="mobile-link">
+                        {t('nav.philosophy')}
+                    </button>
+                    <button onClick={() => { scrollToSection('services'); setIsMobileOpen(false); }} className="mobile-link">
+                        {t('nav.services')}
+                    </button>
+                    <button onClick={() => { scrollToSection('team'); setIsMobileOpen(false); }} className="mobile-link">
+                        {t('nav.team')}
+                    </button>
+                    <button onClick={() => { scrollToSection('contact'); setIsMobileOpen(false); }} className="mobile-link">
+                        {t('nav.contact')}
+                    </button>
                 </div>
             </div>
         </nav>
