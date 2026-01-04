@@ -14,8 +14,8 @@ const resources = {
             hero: {
                 title: '스타트업의 성공을',
                 titleHighlight: '함께 만듭니다',
-                subtitle: '스타트업 투자/법률/인사/노무/PR 등 영역의 전문가 4명이 모인 Consulting Firm, 테트라 주식회사입니다.',
-                description: '여러분과 함께 충분히 고민하고, 문제 해결을 위한 최적의 솔루션을 제공하도록, 테트라 모두가 노력하겠습니다.',
+                subtitle: '테트라는 투자, 법률, 인사·노무, PR 분야의 실무 전문가 4인이 결성한 파트너십 기반의 컨설팅 그룹입니다.',
+                description: '창업자의 시선에서 문제를 바라보고, 성장을 위한 실질적이고 총체적인 솔루션을 One-team으로서 함께 제안합니다.',
                 note: '* 그리스어로 숫자 \'4\'를 뜻하는 \'Tetra\'로 Founding Partner 4명을 사명에 표현하였습니다.',
                 cta: '문의하기'
             },
@@ -148,8 +148,8 @@ const resources = {
             hero: {
                 title: 'Building Success',
                 titleHighlight: 'Together',
-                subtitle: 'Tetra Corporation is a consulting firm of 4 experts in startup investment, legal, HR, labor, and PR.',
-                description: 'We are committed to thinking deeply with you and providing optimal solutions for problem-solving.',
+                subtitle: 'A partnership-driven consulting group of four industry veterans in investment, legal, HR/labor, and PR.',
+                description: 'We stand by founders as an integrated "One-team," offering holistic and practical solutions to fuel sustainable startup growth.',
                 note: '* "Tetra" means the number \'4\' in Greek, representing our 4 Founding Partners.',
                 cta: 'Contact Us'
             },
@@ -216,7 +216,7 @@ const resources = {
                         ]
                     },
                     yang: {
-                        name: 'Yoonji Yang',
+                        name: 'Yunji Yang',
                         role: 'Partner',
                         expertise: 'Investment · HR',
                         bio: 'HR and labor consulting expert who has overseen legal and operations for global companies.',
@@ -226,7 +226,7 @@ const resources = {
                         ]
                     },
                     kim: {
-                        name: 'Kyungbum Kim',
+                        name: 'Bom Kim',
                         role: 'Partner',
                         expertise: 'Investment · PR',
                         bio: 'Strategic PR expert dedicated to the promotion of over 100 startups.',
